@@ -7,33 +7,40 @@
 	
 	<body>
 		<h1>Buy Your Way to a Better Education!</h1>
-
 		<p>
 			The rough economy, along with recent changes in University of Washington policy, now allow us to offer grades for money.  That's right!  All you need to get a 4.0 in this course is cold, hard, cash.
 		</p>
-		
-		<hr />
-		
+		<hr/>
 		<h2>Give Us Your Money</h2>
+		<form action="sucker.php" method="POST">
 		<dl>
 			<dt>Name</dt>
 			<dd>
-				???
+				<input type="text" name="name" />
 			</dd>
 			
 			<dt>Section</dt>
 			<dd>
-				???
+				<select name="Section" id="">Select a section
+				<option value="MA">MA</option>
+				<option value="MB">MB</option>
+				<option value="MC">MC</option>
+				<option value="MD">MD</option>
+				<option value="ME">ME</option>
+				<option value="MF">MF</option>
+				<option value="MG">MG</option>
+				<option value="MH">MH</option>
+				</select>
 			</dd>
-			
 			<dt>Credit Card</dt>
 			<dd>
-				???
+				<input type="text" name="card" />
 			</dd>
+			<input type="radio" name="card-type" value="visa" />Visa
+				<input type="radio" name="card-type" value="master-card" />Master Card
 		</dl>
-		
-		<div>
-			I am a giant sucker.
-		</div>
+			
+			<input type="submit" value="I am a giant sucker." />
+		</form>
 	</body>
 </html>
